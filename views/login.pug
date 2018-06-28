@@ -1,0 +1,15 @@
+html
+ head
+  title Log In
+ body
+  h1 Log In
+  form(method='post')
+   p
+    label Username: 
+     input(type='text', name='un')
+   p
+    label Password: 
+     input(type='password', name='pass')
+   input(type='submit')
+   if message
+    h4(style='color: magenta;')= message

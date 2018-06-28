@@ -1,0 +1,19 @@
+html
+ head
+  title= 'Hi'
+ body
+  h1 Serverless
+  if user
+   h2 welcome #{user}
+   ul
+    li
+     code   #{g}  
+     a(href='/q/google') Google
+    li
+     code   #{f}  
+     a(href='/q/facebook') Facebook
+    li
+     code   #{t}  
+     a(href='/q/twitter') Twitter
+  else
+   a(href='/login') Login
